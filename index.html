@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>▶ MyTube</h2>
+        <input type="text" id="search" placeholder="Video qidirish...">
+    </header>
+
+    <nav>
+        <a href="#">Bosh sahifa</a>
+        <a href="#">Shorts</a>
+        <a href="#">Musiqa</a>
+        <a href="#">O‘yinlar</a>
+    </nav>
+
+    <div class="videos" id="videos">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Dasturlash">
+            <h3>HTML va CSS darslari</h3>
+            <p>IT Akademiya</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500" alt="Futbol">
+            <h3>Eng zo‘r futbol lahzalari</h3>
+            <p>Football TV</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500" alt="O‘yin">
+            <h3>Qiziqarli kompyuter o‘yinlari</h3>
+            <p>Game World</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=500" alt="Musiqa">
+            <h3>Sevimli musiqalar</h3>
+            <p>Music World</p>
+        </div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="Kompyuter">
+    <h3>Kompyuterda ishlash sirlari</h3>
+    <p>Tech World</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500" alt="Dasturlash">
+    <h3>Dasturlashni o‘rganamiz</h3>
+    <p>Code Academy</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500" alt="Gaming">
+    <h3>Eng qiziqarli o‘yinlar</h3>
+    <p>Gaming TV</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Quloqchin">
+    <h3>Musiqa tinglash vaqti</h3>
+    <p>Music Channel</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=500" alt="Sport">
+    <h3>Sport va sog‘lom hayot</h3>
+    <p>Sport TV</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500" alt="Tabiat">
+    <h3>Tabiatning go‘zal manzaralari</h3>
+    <p>Travel World</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500" alt="Jamoa">
+    <h3>Dasturchilar jamoasi</h3>
+    <p>IT Team</p>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="Texnologiya">
+    <h3>Yangi texnologiyalar 2026</h3>
+    <p>Tech News</p>
+</div>
+
+    </div>
+
+    <script>
+        const search = document.getElementById("search");
+        const cards = document.querySelectorAll(".card");
+
+        search.addEventListener("input", function () {
+            cards.forEach(function (card) {
+                const title = card.querySelector("h3").textContent.toLowerCase();
+                card.style.display = title.includes(search.value.toLowerCase())
+                    ? "block"
+                    : "none";
+            });
+        });
+    </script>
+
+</body>
+</html>
+```
+

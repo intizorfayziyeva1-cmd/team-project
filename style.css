@@ -1,0 +1,199 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: white;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px #ddd;
+        }
+
+        h2 {
+            color: red;
+            margin: 0;
+        }
+
+        input {
+            padding: 10px;
+            width: 35%;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 17px;
+        }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+header h2 {
+    color: red;
+    font-size: 28px;
+}
+
+input {
+    padding: 12px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+input:focus {
+    border-color: red;
+}
+
+/* Menu */
+nav {
+    background: white;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Video cards */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px;
+}
+
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #ddd;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Telefon uchun */
+@media (max-width: 768px) {
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 12px;
+        gap: 12px;
+    }
+
+    header {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    input {
+        width: 55%;
+    }
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav a {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .card img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    .videos {
+        grid-template-columns: 1fr;
+    }
+}
+```
